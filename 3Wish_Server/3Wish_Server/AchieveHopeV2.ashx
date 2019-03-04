@@ -13,6 +13,8 @@ public class AchieveHopeV2 : IHttpHandler {
 
     public void ProcessRequest (HttpContext context) {
         context.Response.ContentType = "text/plain";
+
+           //TEST UPLOAD
         string wish_sn = context.Request.Form["item1"];
         string wish_member_sn = context.Request.Form["item2"];
         string help_member_sn = context.Request.Form["item3"];
